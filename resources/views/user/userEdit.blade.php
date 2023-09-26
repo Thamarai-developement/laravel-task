@@ -11,9 +11,9 @@
             <h1 class="m-0 text-dark">Update User</h1>
           </div><!-- /.col -->
           <div class="col-sm-2">
-          <a class="btn btn-primary" href="{{url('contact/list')}}">Back</a>
+          <a class="btn btn-primary" href="{{url('user/list')}}">Back</a>
           </div><!-- /.col -->
-          <div class="col-sm-6">
+          <div class="col-sm-2">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
               <li class="breadcrumb-item active">Update User</li>
