@@ -62,7 +62,7 @@
                         <div class="form-group">
                             <label for="exampleInputEmail1">Country Code:<span style="color:red;">*</span></label>
                             <select class="form-control" style="width: 100%;" name="country_code">
-                                <option value="">Select User</option>
+                                <option value="">Select Country Code</option>
                                   @foreach($country_codes as $data)
                                     @if(empty($data->idd->suffixes) == false)
                                     <option value="{{$data->idd->suffixes[0]}}" {{ old('country_code') == $data->idd->suffixes[0] ? 'selected' : '' }}>  {{($data->idd->suffixes[0])}} </option>

@@ -32,7 +32,7 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form role="form" action="{{url('contact/update')}}" method="post" id="edit-user">
+              <form role="form" action="{{url('user/update')}}" method="post" id="edit-user">
               @csrf
               @method('PUT')
               <input type="hidden" name="id" value="{{ $user->id }}">
@@ -71,38 +71,4 @@
 
 </div>
 
-<script>
-$(function() {
-  // Initialize form validation on the registration form.
-  // It has the name attribute "registration"
-  
-  $( "#edit-user" ).validate({
-  rules: {
-    user_name:{
-      required: true,
-      minlenght: 5,
-    },      
-    user_email:{
-      required: true,
-      
-    },
-    
-  	
-  },
-   messages: {
-      user_name: {
-      required: "User Name is required",
-
-     }, 
-     user_email: {
-      required: "Email is required",
-     },      
-      
-   
-    },
-  
-});
-
-}); 
-</script>
 @include('layouts.footer')
